@@ -187,3 +187,40 @@ footer {
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
+
+
+/* checkbox */
+
+.inprogress li:nth-child(odd) { background-color: #E0144C;}
+
+
+input[type="checkbox"]{
+  margin-left: 5px;
+}
+
+input[type="checkbox"]:checked::after{
+  content: "\2713";
+  width: 25px;
+  height: 25px;
+  border: 4px solid #DAA520;
+  border-radius: 50%;
+  background-color: #FFD700;
+  position: absolute;
+  font-size: 1em;
+  text-align: center;
+  top: 5px;
+  right: 12px;
+  color: #fff;
+
+  animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to{ opacity: 1;}
+}
+
+ul li { 
+  text-transform: uppercase; 
+  position: relative;
+}
