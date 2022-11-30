@@ -18,7 +18,8 @@ color: white;
 
 background-image: url("../images/background.webp");
 background-repeat: no-repeat;
-background-size: contain;
+width: 100%;
+height: 100%;
 }
 
 /* main header rules */
@@ -32,9 +33,9 @@ header {
 #main-logo { width: 220px; padding: 10px 20px; margin-left: auto; }
 
 /* main rules here */
-#character-nav { margin-left: 30%; max-width: 60%; }
+#character-nav { margin-left: 49%; max-width: 40%; }
 
-.characters { list-style-type: none; }
+.characters { list-style-type: none;}
 
 .characters li { 
   display: inline-block;
@@ -43,7 +44,7 @@ header {
 
   background-color: black;
 
-  text-align: left;
+  text-align: center;
 
   cursor: pointer;
 }
@@ -64,6 +65,7 @@ header {
 article { 
   padding: 20px;
   margin-left: 30%;
+  text-align: center;
 }
 
 /* select the h3 tag inside the article tag on the page */
@@ -80,10 +82,10 @@ article p {
 }
 
 .sprite {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   
-  background-image: url('../images/marvelSprites.jpg');
+  background-image: url('../images/worldcup.jpg');
 }
 
 #carol { background-position: -150px 0; }
@@ -120,16 +122,39 @@ footer {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.85);
-  background-image: url('../images/Cap_LB_Bg.png');
   background-repeat: no-repeat;
 
-  background-size: 55vh; /* 55% of the viewport height */
+  background-size: 65vh; /* 55% of the viewport height */
   background-position: 40px bottom;
 
   display: none;
 }
 
-#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+#lightbox { background-image: url('../images/maradona.webp'); }
+#lightbox2 { 
+  background-image: url('../images/pele.png'); 
+  background-position: -70px 40px;
+  background-size: 700px;}
+#lightbox3 {
+  background-image: url('../images/suarez.png');
+  background-position: -70px 40px;
+  background-size: 700px;
+}
+#lightbox4 { 
+  background-image: url('../images/ronaldo.png'); 
+  background-position: -70px 40px;
+  background-size: 700px;
+}
+#lightbox5 { 
+  background-image: url('../images/kane.png'); 
+  background-position: -70px 40px;
+  background-size: 700px;
+}
+#lightbox6 { 
+  background-image: url('../images/mbappe.webp'); 
+  background-position: -70px 40px;
+  background-size: 700px;
+}
 
 .lightbox_close {
   position: relative;
